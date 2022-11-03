@@ -1,0 +1,75 @@
+.header {
+  margin-top: 40px;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav.caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.nav a {
+  margin-right: 25px;
+  position: relative;
+  color: $white;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 20px;
+    left: 0;
+    background: $white;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    color: $green;
+    transition: all color 0.3s ease;
+  }
+}
+.nav a:hover:before {
+  cursor: pointer;
+  width: 100%;
+  height: 2px;
+}
+.logo a {
+  cursor: pointer;
+}
+.time {
+  margin-bottom: 5px;
+}
+.number {
+  margin-right: 5px;
+}
+.phone {
+  display: flex;
+  align-items: center;
+}
+.phone a:hover {
+  cursor: pointer;
+  color: $green;
+}
+.position {
+  display: flex;
+  align-items: center;
+}
+.header-item.messenger {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  & a img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+.messenger-item {
+  margin-right: 10px;
+}

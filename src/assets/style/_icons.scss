@@ -1,0 +1,30 @@
+.icon-phone {
+  width: 22px;
+  height: 22px;
+  mask-image: url(/src/assets/static/img/icon-phone.svg);
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  background: $green;
+  margin-right: 5px;
+}
+.icon-position {
+  width: 22px;
+  height: 22px;
+  mask-image: url(/src/assets/static/img/position.svg);
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  background: $green;
+  margin-right: 5px;
+}
+.viber,
+.telegram,
+.whats-up {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: $tablet) {
+}
