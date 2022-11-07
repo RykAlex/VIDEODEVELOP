@@ -1,0 +1,110 @@
+section.grid {
+  margin-top: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 757px;
+}
+.item-wrapper {
+  padding: 25px 100px 25px 35px;
+  &.color-ground {
+    background-color: $black-ground;
+  }
+  p {
+    color: $white;
+  }
+}
+
+.grid-item h1 {
+  color: $green;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  white-space: nowrap;
+  & span {
+    color: $black-text;
+    background: $green;
+  }
+}
+// .img-container {
+//   height: 423px;
+//   img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     border-radius: 0px 10px 10px 0px;
+//   }
+// }
+
+.gift {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gift-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gift-img {
+  margin-right: 20px;
+}
+.gift-text h2 {
+  font-weight: 500;
+  span {
+    color: $green;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 130%;
+  }
+}
+
+.btn-request.main {
+  color: $white;
+  background-color: $black-text;
+  font-family: Montserrat;
+  font-style: 500;
+  font-size: 18px;
+  border: 2px solid $green;
+  line-height: 150%;
+  border-radius: 15px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+  &:hover {
+    cursor: pointer;
+    background-color: $black-ground;
+    color: $green;
+    border: 2px solid $white;
+  }
+}
+
+.vidbox {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+  border-radius: 0 10px 10px 0;
+  width: 757px;
+}
+#video {
+  width: 100%;
+  object-fit: cover;
+}
+#playbutton {
+  position: absolute;
+  cursor: pointer;
+  mask-image: url(/src/assets/static/img/player.svg);
+  mask-position: center center;
+  background-color: $white;
+  mask-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#playbutton.playing {
+  visibility: hidden;
+}
+
+@media screen and (max-width: $tablet) {
+}
