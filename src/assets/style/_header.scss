@@ -74,4 +74,13 @@
   margin-right: 10px;
 }
 @media screen and (max-width: $tablet) {
+  .nav.caption {
+    display: none;
+  }
+  .header-item.duty.caption {
+    display: none;
+  }
+  .header-item.contacts.caption {
+    display: none;
+  }
 }

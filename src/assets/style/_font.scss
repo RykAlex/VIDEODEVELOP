@@ -50,12 +50,13 @@ h2 {
   color: $white;
 }
 
-// h3 {
-//   font-family: Montserrat;
-//   font-size: 22px;
-//   font-weight: 800;
-//   line-height: 122%;
-// }
+h3 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+  color: $white;
+}
 
 // h4 {
 //   font-family: Montserrat;
@@ -95,6 +96,11 @@ h6 {
   &.medium {
     font-size: 16px;
   }
+  &.semibold {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+  }
 }
 .caption-medium {
   font-family: Montserrat;
@@ -112,28 +118,24 @@ h6 {
 }
 
 @media screen and (max-width: $tablet) {
-  body {
-    font-size: 15px;
-  }
-
   h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  h4 {
     font-size: 17px;
   }
 
+  h2 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
   h5 {
-    font-size: 15px;
+    font-size: 10px;
     line-height: 120%;
   }
 
@@ -143,7 +145,7 @@ h6 {
   }
 
   body {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 170%;
   }
 
