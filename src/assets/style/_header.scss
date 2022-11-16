@@ -1,24 +1,24 @@
 .header {
   margin-top: 40px;
-  height: 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav.caption {
+.header-nav {
+  padding: 35px 0;
+}
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-transform: uppercase;
 }
-.nav a {
+
+.nav__item {
   margin-right: 25px;
   position: relative;
+}
+.nav__link {
   color: $white;
-
-  &:last-child {
-    margin-right: 0;
-  }
   &::before {
     content: "";
     position: absolute;
@@ -33,45 +33,93 @@
     cursor: pointer;
     color: $green;
     transition: all color 0.3s ease;
+    &::before {
+      cursor: pointer;
+      width: 100%;
+      height: 2px;
+    }
   }
 }
-.nav a:hover:before {
-  cursor: pointer;
-  width: 100%;
-  height: 2px;
+.nav__text {
+  text-transform: uppercase;
 }
-.logo a {
+.logo img {
+  transition: all 0.3s;
+}
+.logo img:hover {
+  transform: scale(1.1);
   cursor: pointer;
 }
-.time {
+
+.duty {
+  display: flex;
+  flex-direction: column;
+}
+
+.duty__time {
   margin-bottom: 5px;
 }
-.number {
-  margin-right: 5px;
+
+.contacts {
+  display: flex;
+  flex-direction: column;
 }
-.phone {
+
+.contacts-phone {
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
-.phone a:hover {
-  cursor: pointer;
-  color: $green;
+.phone__icon {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  margin-right: 5px;
+  mask-image: url(/src/assets/static/img/icon-phone.svg);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  background-color: $green;
+}
+.phone__number {
+  margin-right: 10px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 2px -2px 20px rgba($color: $green, $alpha: 0.8);
+  }
 }
 .position {
   display: flex;
   align-items: center;
 }
-.header-item.messenger {
+.position__icon {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  margin-right: 5px;
+  mask-image: url(/src/assets/static/img/position.svg);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  background-color: $green;
+}
+.header-messenger {
   margin-left: 30px;
+}
+.messenger {
   display: flex;
   align-items: center;
-  & a img:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-  }
 }
-.messenger-item {
+.messenger__icon img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.messenger__item {
   margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: $tablet) {
   .nav.caption {

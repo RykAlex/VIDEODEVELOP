@@ -1,51 +1,49 @@
-section.grid {
-  margin-top: 60px;
-
-  border-radius: 10px;
+.section {
+  margin-top: 30px;
   margin-bottom: 60px;
 }
-.grid {
+.section-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.item-wrapper {
-  padding: 25px 100px 25px 35px;
-  &.color-ground {
-    background-color: $black-ground;
-  }
-  p {
-    color: $white;
-  }
+.section-items {
+  padding: 40px 100px 0 40px;
 }
-
-.grid-item h1 {
+.item__title {
+  margin-bottom: 20px;
+}
+.item__title h1 {
   color: $green;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  white-space: nowrap;
   & span {
     color: $black-text;
     background: $green;
   }
 }
-
+.item__text {
+  background-color: $black-ground;
+  margin: 25px -100px 25px -40px;
+  p {
+    padding: 25px 100px 25px 40px;
+  }
+}
 .gift {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.gift-item {
+.gift__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.gift-img {
+.gift__img {
   margin-right: 20px;
 }
-.gift-text h2 {
+.gift__text h2 {
   font-weight: 500;
-  span {
+  & span {
     color: $green;
     text-transform: uppercase;
     font-weight: 700;
@@ -103,7 +101,7 @@ section.grid {
   .grid {
     grid-template-columns: 1fr;
   }
-  .item-wrapper {
+  .section__items {
     padding: 12px 12px 12px 12px;
   }
   .gift {
