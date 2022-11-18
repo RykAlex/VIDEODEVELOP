@@ -1,14 +1,14 @@
-.section {
+.main {
   margin-top: 30px;
   margin-bottom: 60px;
 }
-.section-content {
+.creating-video {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.section-items {
+.creating-video__items {
   padding: 40px 100px 0 40px;
 }
 .item__title {
@@ -71,11 +71,10 @@
 
 .vidbox {
   position: relative;
-  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 0 10px 10px 0;
-  // width: 757px;
 }
 #video {
   width: 100%;
@@ -98,7 +97,7 @@
 }
 
 @media screen and (max-width: $tablet) {
-  .grid {
+  .section-content {
     grid-template-columns: 1fr;
   }
   .section__items {

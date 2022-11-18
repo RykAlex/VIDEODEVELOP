@@ -1,37 +1,36 @@
-.video-shooting-is {
+.video-is {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
   margin-bottom: 60px;
 }
-.container-content {
+.video-is-items {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
 }
-.container-content h2 {
+.video-is-items h2 {
   padding: 10px 0px 10px 25px;
   background-color: $green;
   border-radius: 10px 10px 0 0;
   color: $black-text;
 }
 
-.is-item-wrapper {
+.video-is-items__wrapper {
+  padding: 25px;
   background-color: $black-ground;
-}
-.is-item-text.caption-regular {
-  font-size: 14px;
-  line-height: 150%;
 }
 
 .is-item-wrapper {
   padding: 25px 25px 25px 25px;
 }
-.container-content h3 {
+.video-is-items h3 {
   padding: 25px 0 25px 25px;
 }
-
+.wrapper__img {
+  margin-bottom: 25px;
+}
 @media screen and (max-width: $tablet) {
-  .video-shooting-is {
+  .video-is {
     grid-template-columns: 1fr;
   }
 }

@@ -2,8 +2,27 @@
   padding: 17px 45px;
   background-color: $btn-ground;
   border-radius: 7px;
+  white-space: nowrap;
   outline: none;
   border: 0;
 }
+.btn-more {
+  font-size: 20px;
+  line-height: 150%;
+  color: $green;
+  background: none;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+.btn-more-arrow {
+  width: 18px;
+  height: 18px;
+  mask-image: url(/src/assets/static/img/arrow-more.svg);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  background: $green;
+}
+
 @media screen and (max-width: $tablet) {
 }

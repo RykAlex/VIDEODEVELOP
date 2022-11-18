@@ -1,0 +1,20 @@
+section.video-services {
+  margin-bottom: 60px;
+}
+.container__video-services {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.container__video-services h2 {
+  padding: 10px 0px 10px 25px;
+  background-color: $green;
+  color: $black-text;
+}
+.section-wrapper--along {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: $tablet) {
+}
