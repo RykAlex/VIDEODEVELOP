@@ -1,0 +1,44 @@
+section.about-video-shooting {
+  margin-bottom: 60px;
+}
+.container__about-video-shooting {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+// .container__about-video-shooting h2 {
+//   padding: 10px 0px 10px 25px;
+//   background-color: $green;
+//   color: $black-text;
+// }
+.section-wrapper--along {
+  border-radius: 10px;
+}
+.section-block__title--green {
+  color: $green;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 150%;
+  // margin-top: 65px;
+}
+.section-block--about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 85px;
+}
+.section-block--about h2 {
+  margin-left: 0;
+  margin-top: 65px;
+}
+.section-block__text--about {
+  font-size: 20px;
+  text-align: center;
+  padding-left: 115px;
+  padding-right: 115px;
+}
+@media screen and (max-width: $tablet) {
+}

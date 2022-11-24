@@ -1,14 +1,21 @@
 .btn-request {
   padding: 17px 45px;
   background-color: $btn-ground;
+  font-family: Montserrat, sans-serif;
+  color: $black-text;
+  font-size: 18px;
+  line-height: 150%;
   border-radius: 7px;
   white-space: nowrap;
   outline: none;
   border: 0;
+  width: max-content;
+  max-width: 100%;
 }
 .btn-more {
   font-size: 20px;
   line-height: 150%;
+
   color: $green;
   background: none;
   border: none;
@@ -25,4 +32,16 @@
 }
 
 @media screen and (max-width: $tablet) {
+  .btn-request {
+    padding: 8px 20px;
+    background-color: $btn-ground;
+    font-family: Montserrat, sans-serif;
+    color: $black-text;
+    font-size: 14px;
+    line-height: 150%;
+    border-radius: 3px;
+    white-space: nowrap;
+    outline: none;
+    border: 0;
+  }
 }

@@ -1,13 +1,8 @@
-section.video-services {
-  margin-bottom: 60px;
-}
 .container__video-services {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
 }
-.container__video-services h2 {
+h2 {
   padding: 10px 0px 10px 25px;
   background-color: $green;
   color: $black-text;
@@ -17,4 +12,19 @@ section.video-services {
 }
 
 @media screen and (max-width: $tablet) {
+  .container__video-services {
+    margin: 0 auto;
+    padding-left: 0;
+    h2 {
+      text-align: center;
+      border-radius: 0;
+      margin-bottom: 20px;
+      margin-left: -11px;
+      margin-right: -12px;
+      padding-left: 2px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      margin-top: 25px;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-.video-is {
+.container__block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
@@ -30,7 +30,10 @@
   margin-bottom: 25px;
 }
 @media screen and (max-width: $tablet) {
-  .video-is {
+  .container__block {
     grid-template-columns: 1fr;
+  }
+  .video-is-items__wrapper {
+    padding: 12px;
   }
 }

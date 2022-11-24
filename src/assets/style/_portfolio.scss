@@ -1,13 +1,13 @@
-section.portfolio {
+.portfolio__block {
   margin-bottom: 60px;
-}
-.container__portfolio {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
+}
+.section-block {
   display: flex;
   flex-direction: column;
 }
-.container__portfolio h2 {
+.portfolio__block h2 {
   padding: 10px 0px 10px 25px;
   background-color: $green;
   border-radius: 10px 10px 0 0;
@@ -16,16 +16,18 @@ section.portfolio {
 
 .benefits {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   margin: 45px;
 }
 .benefits-item {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 .benefits__icon {
   width: 131px;
   height: 125px;
+
   flex-shrink: 0;
 
   .icon__img {
@@ -60,11 +62,12 @@ section.portfolio {
     }
   }
 }
+
 .section-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  justify-items: end;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: center;
+  justify-items: flex-end;
   background-color: $black-ground;
   border-radius: 0 0 10px 10px;
   &-along {
@@ -72,6 +75,8 @@ section.portfolio {
   }
 }
 .section-block {
+  display: flex;
+  flex-direction: column;
   padding-left: 70px;
   padding-right: 116px;
   padding-bottom: 50px;
@@ -87,21 +92,27 @@ section.portfolio {
     margin-left: -70px;
     text-transform: uppercase;
     margin-top: 50px;
-  }
-  .btn-request {
-    transition: 0.3s linear;
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.1);
-    }
+    background: $green;
   }
 }
-
+.btn-request {
+  transition: 0.3s linear;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
 .section__pic {
   margin-right: 50px;
 }
 
 @media screen and (max-width: $tablet) {
+  .portfolio__block {
+    margin-bottom: 30px;
+  }
+  .portfolio__block h2 {
+    padding: 10px 0px 10px 0px;
+  }
   .sections-content {
     flex-direction: column;
   }
@@ -114,9 +125,47 @@ section.portfolio {
   .benefits {
     margin: 10px;
   }
-  .benefits-icon {
-    width: 100px;
-    height: 100px;
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+  .benefits-item {
+    margin-bottom: 20px;
+  }
+  .benefits__icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  .section-block {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 12px;
+    padding-bottom: 25px;
+
+    .text-16-regular {
+      line-height: 150%;
+      margin-bottom: 40px;
+    }
+    h2 {
+      text-align: center;
+      border-radius: 0;
+      margin-bottom: 20px;
+      margin-left: -11px;
+      margin-right: -12px;
+      text-transform: uppercase;
+      margin-top: 25px;
+    }
+    .btn-request {
+      transition: 0.3s linear;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+  .section__pic {
+    margin-right: 0px;
+    border-radius: 0 10px 10px 0;
   }
   .grid-item-text {
     padding-left: 0;
