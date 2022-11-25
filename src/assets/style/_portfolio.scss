@@ -1,13 +1,11 @@
-.portfolio__block {
-  margin-bottom: 60px;
+.container__block--along {
+  display: grid;
+  grid-template-columns: 1fr;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
 }
-.section-block {
-  display: flex;
-  flex-direction: column;
-}
-.portfolio__block h2 {
+
+.container__block--along h2 {
   padding: 10px 0px 10px 25px;
   background-color: $green;
   border-radius: 10px 10px 0 0;
@@ -70,13 +68,11 @@
   justify-items: flex-end;
   background-color: $black-ground;
   border-radius: 0 0 10px 10px;
-  &-along {
-    border-radius: 10px;
-  }
 }
 .section-block {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   padding-left: 70px;
   padding-right: 116px;
   padding-bottom: 50px;

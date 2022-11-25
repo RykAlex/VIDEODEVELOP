@@ -1,8 +1,7 @@
-section.main {
-  margin-top: 30px;
+section {
   margin-bottom: 60px;
 }
-.creating-video {
+.container__section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   border-radius: 10px;
@@ -10,7 +9,7 @@ section.main {
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.creating-video__items {
+.section__items {
   padding: 40px 100px 0 40px;
 }
 .item__title {
@@ -105,14 +104,13 @@ section.main {
 }
 
 @media screen and (max-width: $tablet) {
-  section.main {
-    margin-top: 15px;
+  section {
     margin-bottom: 30px;
   }
-  .creating-video {
+  .container__block {
     grid-template-columns: 1fr;
   }
-  .creating-video__items {
+  .section__items {
     padding: 12px;
   }
   .item__text {

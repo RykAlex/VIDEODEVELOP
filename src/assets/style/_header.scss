@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 .header-nav {
   padding: 35px 0;
@@ -123,6 +124,10 @@
 }
 @media screen and (max-width: $tablet) {
   .header-nav {
+    display: none;
+  }
+  .header-duty,
+  .header-contacts {
     display: none;
   }
 }

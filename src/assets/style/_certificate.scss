@@ -1,14 +1,10 @@
-.sections.sections-gift {
-  padding-top: 30px;
-  margin-bottom: 70px;
-}
-.container-section.container-section-gift {
+.container__block--gift {
   border: none;
   display: flex;
   flex-direction: row;
   position: relative;
 }
-.section-gift-container {
+.section-block--gift {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +28,9 @@
   z-index: 1;
 }
 
-.section__gift__item {
-  margin-top: 25px;
-
+.section-block--gift .section__block__item {
   padding-left: 320px;
   padding-right: 320px;
-  margin-bottom: 25px;
-
   h3 {
     text-align: start;
     margin-bottom: 10px;
@@ -63,4 +55,16 @@ a:hover .btn-more {
   cursor: pointer;
 }
 @media screen and (max-width: $tablet) {
+  .section-block--gift {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-block--gift .section__block__item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section__gift__img1,
+  .section__gift__img2 {
+    display: none;
+  }
 }

@@ -1,20 +1,5 @@
-section.video-aerial {
-  margin-bottom: 60px;
-}
-.container__video-aerial {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.container__video-aerial h2 {
-  padding: 10px 0px 10px 25px;
-  background-color: $green;
-  color: $black-text;
-}
 .section-wrapper--along {
   border-radius: 10px;
 }
-
 @media screen and (max-width: $tablet) {
 }
