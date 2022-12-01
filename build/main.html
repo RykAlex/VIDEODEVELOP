@@ -14,10 +14,14 @@
         <div class="header">
           <ul class="header-nav nav text-14-medium">
             <li class="nav__item">
-              <a class="nav__link" href="http://" target="_blank"> Портфолио </a>
+              <a class="nav__link" href="main.html" target="_blank">
+                <span class="nav__text">Портфолио</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="http://" target="_blank"> Услуги </a>
+              <a class="nav__link" href="serviсes.html"
+                ><span class="nav__text">Услуги</span></a
+              >
             </li>
             <li class="nav__item">
               <a class="nav__link" href="http://" target="_blank">
@@ -92,12 +96,12 @@
     <main>
       <section>
         <div class="container">
-          <div class="container__section">
-            <div class="section__items">
-              <div class="item__title">
+          <div class="section-container section-container--along">
+            <div class="section-items section__items">
+              <div class="section-items__title">
                 <h1><span>Видео</span> производство</h1>
               </div>
-              <div class="item__text text-16-regular">
+              <div class="section-items__text text-16-regular">
                 <p>
                   Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
                   сгенерировать несколько абзацев более менее осмысленного
@@ -105,9 +109,9 @@
                   навык публичных выступлений в домашних условиях
                 </p>
               </div>
-              <div class="item-gift">
+              <div class="section-items">
                 <div class="gift">
-                  <div class="gift__item">
+                  <div class="gift__items">
                     <div class="gift__img">
                       <img src="/assets/static/img/gift.png" alt="" />
                     </div>
@@ -142,16 +146,16 @@
       </section>
       <section>
         <div class="container">
-          <div class="container__block">
-            <div class="block__items">
+          <div class="section-container section-container--multi">
+            <div class="card">
               <h2>Коммерческая видесъемка это:</h2>
-              <div class="block__items__wrapper">
+              <div class="card__items">
                 <img
-                  class="wrapper__img"
+                  class="card__items-img"
                   src="/assets/static/img/video-com.png"
                   alt=""
                 />
-                <p class="wrapper__text text-16-regular">
+                <p class="card__items-text text-16-regular">
                   Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
                   сгенерировать несколько абзацев более менее осмысленного текста рыбы
                   на русском языке, а начинающему оратору отточить навык публичных
@@ -160,15 +164,15 @@
               </div>
               <h3>Оптом от 25р. за 1 видео</h3>
             </div>
-            <div class="block__items">
+            <div class="card">
               <h2>Некоммерческая видесъемка это:</h2>
-              <div class="block__items__wrapper">
+              <div class="card__items">
                 <img
-                  class="wrapper__img"
+                  class="card__items-img"
                   src="/assets/static/img/video-nocom.png"
                   alt=""
                 />
-                <p class="wrapper__text text-16-regular">
+                <p class="card__items-text text-16-regular">
                   Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
                   сгенерировать несколько абзацев более менее осмысленного текста рыбы
                   на русском языке, а начинающему оратору отточить навык публичных
@@ -183,7 +187,7 @@
       
       <section>
         <div class="container">
-          <div class="container__block container__block--along">
+          <div class="section-container section-container-portfolio">
             <div class="benefits">
               <div class="benefits-item">
                 <div class="benefits__icon">
@@ -247,10 +251,10 @@
                 </div>
               </div>
             </div>
-            <div class="section-wrapper">
-              <div class="section-block">
-                <h2 class="section-block__title">Портфолио</h2>
-                <p class="section-block__text text-16-regular">
+            <div class="portfolio">
+              <div class="portfolio__items">
+                <h2 class="portfolio__items__title">Портфолио</h2>
+                <p class="portfolio__items__text text-16-regular">
                   Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
                   сгенерировать несколько абзацев более менее осмысленного текста рыбы
                   на русском языке, а начинающему оратору отточить навык публичных
@@ -487,6 +491,93 @@
       
     </main>
     <footer>
+      <div class="container container--footer">
+        <div class="footer">
+          <div class="footer-logo">
+            <a class="logo__link" href="http://" target="_blank">
+              <img src="/assets/static/img/logo.png" alt="" />
+            </a>
+          </div>
+          <ul class="footer-nav text-14-medium">
+            <li class="nav__item">
+              <a class="nav__link" href="http://" target="_blank"
+                ><span class="nav__text">Портфолио</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://" target="_blank">
+                <span class="nav__text">Услуги</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://" target="_blank">
+                <span class="nav__text">О видеосъемке</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://" target="_blank">
+                <span class="nav__text">Оборудование</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://" target="_blank">
+                <span class="nav__text">Студия</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://" target="_blank"
+                ><span class="nav__text">Сертификат</span>
+              </a>
+            </li>
+          </ul>
+          <div class="footer-insta">
+            <a class="insta_link" href="http://" target="_blank">
+              <img src="/assets/static/img/Instagram.svg" alt="" />
+            </a>
+            <a href=""><div class="mail text-14-medium">@Vidik.by</div></a>
+          </div>
+          <div class="footer-duty duty text-14-medium">
+            <div class="duty__time">8:00 — 23:00</div>
+            <div class="duty__days">Без выходных</div>
+          </div>
+          <div class="footer-contacts contacts">
+            <div class="contacts-phone">
+              <div class="phone__icon"></div>
+              <a class="phone__number text-16-medium" href="tel: +375296901313"
+                >+375 (29) 690-13-13</a
+              >
+              <div class="phone__name text-14-regular">Владислав</div>
+            </div>
+            <div class="contacts-position position">
+              <div class="position__icon"></div>
+              <div class="position__text text-14-regular">Минск (выезд по РБ)</div>
+            </div>
+          </div>
+          <div class="footer-messenger messenger">
+            <div class="messenger__item">
+              <div class="messenger__icon">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/static/img/viber.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="messenger__item">
+              <div class="messenger__icon">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/static/img/telegram.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="messenger__item">
+              <div class="messenger__icon">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/static/img/whatsapp.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="/assets/script/script.js"></script>
     

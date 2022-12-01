@@ -22,6 +22,22 @@ function handlePlayButton() {
     playButton.classList.remove("playing");
   }
 }
+activeMenu();
+function activeMenu() {
+  let navLink = document.querySelectorAll('.nav__link');
+  
+  navLink.forEach(item => {
+    let navText = document.querySelector('.nav__text');
+    item.addEventListener('click', function () {
+      item.classList.toggle('active');
+    })
+  }) 
+
+}
+
+
+
+
 },{}]},{},[1])
 
 //# sourceMappingURL=script.js.map

@@ -1,28 +1,28 @@
-section {
-  margin-bottom: 60px;
-}
-.container__section {
+.section-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  border-radius: 10px;
+
   justify-content: center;
   align-items: center;
+}
+.section-container--along {
+  border-radius: 10px;
+  margin-bottom: 60px;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .section__items {
   padding: 40px 100px 0 40px;
-}
-.item__title {
-  margin-bottom: 20px;
-}
-.item__title h1 {
   color: $green;
-  & span {
+  h1 span {
     color: $black-text;
     background: $green;
   }
 }
-.item__text {
+.section-items__title {
+  margin-bottom: 20px;
+}
+
+.section-items__text {
   background-color: $black-ground;
   margin: 25px -100px 25px -40px;
   p {
@@ -34,7 +34,7 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-.gift__item {
+.gift__items {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,30 +104,28 @@ section {
 }
 
 @media screen and (max-width: $tablet) {
-  section {
+  .section-container--along {
     margin-bottom: 30px;
   }
-  .container__block {
+  .section-container--along {
     grid-template-columns: 1fr;
   }
   .section__items {
     padding: 12px;
   }
-  .item__text {
+  .section-items__text {
     background-color: $black-ground;
     margin: -12px;
     p {
       padding: 12px;
     }
   }
-  .gift__item {
-    margin-top: 30px;
-  }
-  .section__items {
-    padding: 12px 12px 12px 12px;
-  }
+
   .gift {
     flex-direction: column;
+  }
+  .gift__item {
+    margin-top: 30px;
   }
   .gift__text p {
     font-size: 16px;

@@ -1,0 +1,101 @@
+.container__block--index {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.section-wrapper--index {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  justify-items: flex-end;
+  background-color: $black-ground;
+  border-radius: 10px;
+}
+.section-block__text {
+  padding-right: 62px;
+  margin-bottom: 20px;
+}
+.video-services--index {
+  margin-top: 25px;
+}
+.section-wrapper--index {
+  background-color: $green;
+}
+.section-block--index {
+  position: relative;
+  background-image: linear-gradient(#3f3f3f, #3f3f3f);
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 calc(100% + 90vw));
+  border-radius: 10px 0 0 10px;
+  padding-bottom: 150px;
+  padding-left: 50px;
+}
+.container__block--index h2 {
+  font-size: 24px;
+  margin-top: 135px;
+  padding-left: 0;
+  margin-bottom: 30px;
+  background: $green;
+  color: $black-text;
+  padding-left: 17px;
+  font-weight: 600;
+  width: 95%;
+}
+.section-block--index h2 {
+  text-align: start;
+  border-radius: 0;
+  margin-bottom: 40px;
+  margin-left: 0;
+  text-transform: uppercase;
+  margin-top: 50px;
+  background: none;
+  color: $green;
+  padding-left: 0;
+}
+
+ul.breadcrumb__items li + li:before {
+  padding: 8px;
+  color: $white;
+  content: "\003e";
+}
+
+ul.breadcrumb__items li a {
+  color: $white;
+  text-decoration: none;
+}
+
+ul.breadcrumb__items li a:hover {
+  cursor: pointer;
+  color: $green;
+}
+ul.breadcrumb__items li span {
+  opacity: 50%;
+}
+
+@media screen and (max-width: $tablet) {
+  .container__block--along {
+    margin: 0 auto;
+    padding-left: 0;
+    h2 {
+      text-align: center;
+      border-radius: 0;
+      margin-bottom: 20px;
+
+      padding-left: 2px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      margin-top: 25px;
+    }
+  }
+  .section-block--index {
+    background-image: linear-gradient(#3f3f3f, #3f3f3f);
+    clip-path: none;
+  }
+  .btn-request.main {
+    font-size: 14px;
+  }
+  .section-block--index {
+    padding-left: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+}

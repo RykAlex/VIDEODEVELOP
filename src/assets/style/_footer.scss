@@ -1,25 +1,31 @@
-.header {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
+footer {
+  background: $black-ground;
 }
-.header-nav {
-  padding: 35px 0;
-}
-.nav {
+.footer {
+  padding-top: 45px;
+  padding-bottom: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav__item {
-  margin-right: 25px;
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-nav .nav__item {
+  margin-right: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   position: relative;
 }
-.nav__link {
+.footer-nav .nav__link {
   color: $white;
+  white-space: nowrap;
   &::before {
     content: "";
     position: absolute;
@@ -28,6 +34,7 @@
     top: 20px;
     left: 0;
     background: $white;
+
     transition: all 0.3s ease;
   }
   &:hover {
@@ -41,33 +48,54 @@
     }
   }
 }
-
 .nav__text {
   text-transform: uppercase;
 }
-.active {
-  color: $green;
+.footer-logo {
+  margin-right: 80px;
 }
-.logo img {
+.footer-logo img {
   transition: all 0.3s;
 }
-.logo img:hover {
+.footer-logo img:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-
-.duty {
+.footer-insta {
+  margin-left: 30px;
+  margin-right: 85px;
+}
+.footer-insta {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.footer-insta > a {
+  margin-bottom: 5px;
+}
+.footer-duty {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  margin-right: 55px;
 }
 
 .duty__time {
   margin-bottom: 5px;
 }
 
-.contacts {
+.footer-contacts {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
 }
 
 .contacts-phone {
@@ -108,7 +136,7 @@
   mask-position: center center;
   background-color: $green;
 }
-.header-messenger {
+.footer-messenger {
   margin-left: 30px;
 }
 .messenger {
@@ -127,11 +155,22 @@
   }
 }
 @media screen and (max-width: $tablet) {
-  .header-nav {
+  .footer-nav {
     display: none;
   }
-  .header-duty,
-  .header-contacts {
+  .footer-duty,
+  .footer-contacts {
     display: none;
+  }
+  .footer-insta {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footer-logo {
+    margin-right: 35px;
+  }
+  .footer {
+    padding-top: 35px;
+    padding-bottom: 45px;
   }
 }

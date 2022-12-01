@@ -1,21 +1,14 @@
-.container__block--along {
-  display: grid;
-  grid-template-columns: 1fr;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+.section-container-portfolio {
   border-radius: 10px;
+  margin-bottom: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-
-.container__block--along h2 {
-  padding: 10px 0px 10px 25px;
-  background-color: $green;
-  border-radius: 10px 10px 0 0;
-  color: $black-text;
-}
-
 .benefits {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 45px;
+  margin: 0 45px 0 45px;
 }
 .benefits-item {
   display: flex;
@@ -61,7 +54,7 @@
   }
 }
 
-.section-wrapper {
+.portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: center;
@@ -69,12 +62,12 @@
   background-color: $black-ground;
   border-radius: 0 0 10px 10px;
 }
-.section-block {
+.portfolio__items {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 70px;
-  padding-right: 116px;
+  padding-right: 150px;
   padding-bottom: 50px;
 
   .text-16-regular {
@@ -103,20 +96,11 @@
 }
 
 @media screen and (max-width: $tablet) {
-  .portfolio__block {
+  .portfolio {
     margin-bottom: 30px;
   }
-  .portfolio__block h2 {
+  .portfolio h2 {
     padding: 10px 0px 10px 0px;
-  }
-  .sections-content {
-    flex-direction: column;
-  }
-  .content-item {
-    padding-left: 0px;
-  }
-  .content-pic {
-    margin-top: 25px;
   }
   .benefits {
     margin: 10px;
@@ -132,7 +116,7 @@
     height: 80px;
     margin-right: 10px;
   }
-  .section-block {
+  .portfolio__items {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 12px;
@@ -158,24 +142,5 @@
         transform: scale(1.1);
       }
     }
-  }
-  .section__pic {
-    margin-right: 0px;
-    border-radius: 0 10px 10px 0;
-  }
-  .grid-item-text {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .content-pic {
-    margin: 0;
-  }
-  .grid-item-text {
-    h2 {
-      margin-left: 0;
-    }
-  }
-  .container-section h2 {
-    padding: 10px;
   }
 }
